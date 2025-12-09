@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useId, useMemo } from "react";
+import { createContext, useContext, useState, useId, useMemo, useCallback } from "react";
 import PropTypes from "prop-types";
 
 const TabsContext = createContext(null);
@@ -7,10 +7,10 @@ export function Tabs({ defaultIndex = 0, children, onChange }) {
   const [active, setActive] = useState(defaultIndex);
   const id = useId();
 
-  const handleSetActive = (index) => {
+  const handleSetActive = useCallback((index) => {
     setActive(index);
     onChange?.(index);
-  };
+  }, [onChange]);
 
   const value = useMemo(
     () => ({ active, setActive: handleSetActive, id }),
