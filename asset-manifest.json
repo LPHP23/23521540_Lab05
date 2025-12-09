@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/23521540_Lab05/static/css/main.cf525bcf.css",
+    "main.js": "/23521540_Lab05/static/js/main.f0fc028f.js",
+    "index.html": "/23521540_Lab05/index.html",
+    "main.cf525bcf.css.map": "/23521540_Lab05/static/css/main.cf525bcf.css.map",
+    "main.f0fc028f.js.map": "/23521540_Lab05/static/js/main.f0fc028f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf525bcf.css",
+    "static/js/main.f0fc028f.js"
+  ]
+}
