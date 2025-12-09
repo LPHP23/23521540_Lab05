@@ -14,7 +14,7 @@ export function Tabs({ defaultIndex = 0, children, onChange }) {
 
   const value = useMemo(
     () => ({ active, setActive: handleSetActive, id }),
-    [active, id]
+    [active, id, handleSetActive]
   );
 
   return (
